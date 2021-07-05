@@ -1,0 +1,21 @@
+kind: pipeline
+type: exec
+name: default
+
+platform:
+  os: linux
+  arch: arm64
+
+steps:
+- name: build
+  commands:
+    - docker build -t crstian/coturn:latest .
+
+- name: publish
+  image: plugins/docker
+  settings:
+    username: crstian
+    password: 4030b8d1-ac40-4732-a668-ef5a21c50ea3
+    registry: registry.hub.docker.com 
+    repo: registry.hub.docker.com/crstian/coturn
+    tags: [ latest ]
