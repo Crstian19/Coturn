@@ -28,7 +28,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag coturn:$(date +%s)
+      run: docker build . --file ./Dockerfile --tag $IMAGE_NAME --build-arg GITHUB_USER=$GITHUB_USER --build-arg GITHUB_TOKEN=$GITHUB_TOKEN
       
     - name: Push image
       run: |
