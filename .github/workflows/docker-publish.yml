@@ -21,7 +21,7 @@ env:
 #  IMAGE_NAME: ${{ github.repository }
   IMAGE_NAME: coturn
   GITHUB_USER: crstian19
-  #GITHUB_TOKEN: ${{ secrets.GPM_TOKEN }}
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 
 jobs:
