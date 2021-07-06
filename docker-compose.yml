@@ -1,0 +1,9 @@
+version: "3.7"
+services:
+  coturn:
+    container_name: coturn
+    image: crstian/coturn
+    ports:
+      - '3478:3478'
+      - '49160-49200:49160-49200/udp'
+    restart: always
