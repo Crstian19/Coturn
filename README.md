@@ -1,6 +1,6 @@
 # Coturn
 
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/crstian19/coturn/Docker)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/crstian19/coturn/Docker?style=flat-square)
 ![Docker Pulls](https://img.shields.io/docker/pulls/crstian/coturn?logo=Docker&style=flat-square)
 
 ## Turn/Stun simple server
